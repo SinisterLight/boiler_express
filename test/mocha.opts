@@ -1,0 +1,4 @@
+--debug
+-R spec
+--ui bdd
+--require should
