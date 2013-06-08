@@ -12,6 +12,7 @@ app.configure(function(){
 });
 
 app.configure('development', function(){
+  app.use(express.logger('dev'));
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
@@ -22,7 +23,7 @@ app.configure('production', function(){
 site = require('./app/controllers/index');
 app.get('/ping', site.ping);
 
-var port = 20000;
+var port = process.env.PORT || 20000;
 var http = require('http');
 var server = http.createServer(app);
 server.listen(port);
