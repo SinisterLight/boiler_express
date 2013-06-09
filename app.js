@@ -1,6 +1,6 @@
 var express = require('express');
 var app = module.exports = express();
-require('./config');
+require('./config')(app);
 
 app.configure(function(){
   app.use(express.bodyParser());
