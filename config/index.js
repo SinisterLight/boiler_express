@@ -11,4 +11,5 @@ module.exports = function(app) {
   });
 
   require('./enviorments')(app);
+  require('./routes')(app);
 };
