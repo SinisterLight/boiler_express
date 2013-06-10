@@ -6,9 +6,9 @@
         "express": "3.2.X"
   }
   , "devDependencies": {
-        "mocha": "1.8.x"
-       , "should": ">=0.0.1"
-       , "supertest": ">=0.0.1"
+        "mocha": ""
+       , "should": ""
+       , "supertest": ""
   }
   , "engines": {
         "node": "0.10.x"
