@@ -3,7 +3,8 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-        "express": "3.2.X"
+        "express": "3.2.X",
+        "recursive-require": ""
   }
   , "devDependencies": {
         "mocha": ""
