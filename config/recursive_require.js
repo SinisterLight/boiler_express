@@ -11,7 +11,7 @@ module.exports = function(directory) {
       else if (/\.js$/.test(file)) {
         file = path.basename(file, '.js');
         obj.__defineGetter__(file, function(){
-          return require('./' + path.join(dir, file));
+          return require(path.join(dir, file));
         });
       }
     }); 

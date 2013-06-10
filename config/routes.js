@@ -1,5 +1,6 @@
-var conrtrollers = require('./recursive_require');
+recursive_require = require('./recursive_require');
+controllers = recursive_require(__dirname + '/../app/controllers/');
 
 module.exports = function(app) {
-  app.get('/ping', conrtrollers.index.ping);
+  app.get('/ping', controllers.index.ping);
 };
