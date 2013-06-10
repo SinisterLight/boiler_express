@@ -1,6 +1,5 @@
-var express = require('express');
+var conrtrollers = require('./recursive_require');
 
 module.exports = function(app) {
-  index = require('../app/controllers/index');
-  app.get('/ping', index.ping);
+  app.get('/ping', conrtrollers.index.ping);
 };
